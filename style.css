@@ -5,15 +5,39 @@
     background-color: lightblue;
     text-align: center;
     line-height: 100px;
+    transition: 0.3s ease;
 }
 
 /* ==== CODE ALONG ==== */
+.box:nth-child(1) {
+    transform: rotate(15deg);
+}
+.box:nth-child(1):hover {
+    transform:rotate(360deg);
+}
 
+.box:nth-child(2) {
+    transform: scale(1.2);
+}
+.box:nth-child(2):hover {
+    transform: scale(1.2) rotate(360deg);
+}
 
 
 /* ==== CODE SOLO ==== */
 
 /* Apply FOUR CSS transforms in total to make the boxes visually distinct and interesting. You can use scale, translate, rotate, and skew or even combine them. */
-
+.box:nth-child(3) {
+    transform:translateX(40px);
+}
+.box:nth-child(3):hover{
+    transform: translateX(40px) rotate(360deg);
+}
+.box:nth-child(4) {
+    transform: skew(10deg, 5deg);
+}
+.box:nth-child(4):hover {
+    transform:skew(10deg,5deg) rotate(360deg);
+}
 
 /* BONUS: Try combining the :hover selector with the transform property. Try to make the boxes spin when you hover over them. Use the transition: 0.3s ease; property and value to make it smoother. */
